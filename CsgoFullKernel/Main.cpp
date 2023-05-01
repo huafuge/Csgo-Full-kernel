@@ -56,7 +56,7 @@ void MainThread()
 	}
 
 	engineBase = GetModuleBasex86(targetApplication, L"engine.dll");
-	if (!engineBase)
+	if (!clientBase)
 	{
 		Print("failed to get engineBase");
 		ExitThread();
